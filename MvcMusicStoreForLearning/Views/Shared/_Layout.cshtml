@@ -1,0 +1,40 @@
+﻿<!DOCTYPE html>
+@*<html>*@
+@*<head>*@
+@*    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />*@
+@*    <meta charset="utf-8" />*@
+@*    <meta name="viewport" content="width=device-width, initial-scale=1.0">*@
+@*    <title>@ViewBag.Title</title>*@
+@*    @Styles.Render("~/Content/Site.css")*@
+@*    @Scripts.Render("~/bundles/modernizr")*@
+@**@
+@*</head>*@
+@**@
+@*    @RenderBody()*@
+@**@
+@**@
+@*    @Scripts.Render("~/bundles/jquery")*@
+@*    @Scripts.Render("~/bundles/bootstrap")*@
+@*    @RenderSection("scripts", required: false)*@
+@*</body><body>*@<body>
+	@**@
+	@*</html>*@
+
+	<html>
+	<head>
+		<title>@ViewBag.Title</title>
+		@Styles.Render("~/Content/Site.css")
+	</head>
+
+	<body>
+		<div id="header">
+			<h1>ASP.NET MVC MUSIC STORE</h1>
+			<ul id="navlist">
+				<li class="first"><a href="/" id="current"></a></li>
+				<li><a href="/Store/">Store</a></li>
+			</ul>
+		</div>
+		@RenderBody()
+	</body>
+</html>
+
